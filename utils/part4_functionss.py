@@ -3,6 +3,10 @@ def fun(*args,**kwargs):
     print(kwargs)
 
 
+def display_value(x):
+    print("printing x"+x)
+
+
 # *args positional arguments, *pargs positional tuple , **kwargs keyword arguments or dictionaries
 def func(a,**pargs):
     print(a,pargs)
@@ -49,41 +53,3 @@ list_x = [1,2,3,4,5]
 list_y = [1,2,3,4,5]
 
 list(map(lambda x: x*2, list_x))
-
-
-if __name__== "__main__":
-    """fun(1,2,3,4,k=7,j=9)
-
-    func(1,k=2,l=3)
-    x(1,k=2,l=3)
-
-    func1(x,1,k=2,l=3)
-    print(func1.__closure__)
-    print(func1.__module__)
-    print(func1.__annotations__)
-
-    print(f1(1,2,3))
-    print(f2(1, 2, 3))
-
-    print ("list of lambdas in action")
-    for f in list_lambdas:
-        print(f(2))
-
-    print (dict_lambdas['two']())
-
-    act = action(99)
-    print(act(2))
-
-    act = action(100)
-    print(act(2))"""
-    """map is an iterable in python 3 so it needs list to display all elements"""
-    print(map(lambda x: x*2, list_x))
-    print(list(map(lambda x: x * 2, list_x)))
-
-    """map can take elements from sequences in parallel as distinct arguments to function, 
-    below map function takes value from two sequences and does a * b 
-    """
-    print(list(map(lambda x,y: x * y, list_x,list_y)))
-    """range, filter, map all return iterables so they need list to return results"""
-    print(list(range(-5,5)))
-
